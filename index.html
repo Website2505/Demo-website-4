@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iEduaction-Traansforming Education In India</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    position: sticky;
+    top: 0;
+}
+.nav-bar .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-bar .logo img{
+    border: 4px solid white;
+    border-radius: 70px;
+    margin: 5px 90px;
+    cursor: pointer;
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    
+}
+.nav-bar .nav-list{
+    /* background-color: black; */
+    width: 70%;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    
+}
+
+.nav-bar .nav-list li{
+    list-style: none;
+    padding: 0 30px;
+    
+}
+
+.nav-bar .nav-list li a{
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+.nav-bar .nav-list li a:hover{
+    color: grey;
+    
+}
+.nav-bar .right-nav{
+    /* background-color: purple; */
+    width: 30%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+   
+}
+.nav-bar .right-nav #search{
+    margin: 5px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 9px;
+}
+.nav-bar .right-nav .btn{
+    margin: 0 20px 0 20px;
+}
+.nav-bar .burger{
+    position: absolute;
+    right: 5%;
+    top: 15px;
+    cursor: pointer;
+    display: none;
+}
+.nav-bar .burger .line{
+    width: 33px;
+    height: 0.01px;
+    border: 4px solid white;
+    margin: 5px 0;
+
+}
+
+.background{
+    background:rgba(0,0,0,0.7) url("bg.jpg");
+    background-size: cover; 
+    background-blend-mode: darken;
+}
+.first-section{
+    min-height: 90vh;
+}
+.first-section .box-main{
+    max-width: 50%;
+    display: flex;
+    font-family: 'Roboto Mono', monospace;
+    align-items: center;
+    color: white;
+    margin: auto;
+    height: 100%;
+    padding: 15% 0;
+}
+.first-section .box-main .first-half{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    margin: auto 0;
+    vertical-align: middle;
+}
+    
+.first-section .box-main .second-half{
+    width: 30%;
+    
+}
+.first-section .box-main .second-half img{
+    border: 3px solid white;
+    border-radius: 160px;
+}
+.text-big{
+    font-size: 40px;
+}
+.text-small{
+    font-size: 20px;
+}
+.btn{
+    padding: 12px;
+    border: 2px solid white;
+    margin: 15px 0;
+    border-radius: 35px;
+    font-size: 20px;
+    background: none;
+    color: white;
+    font-size: 20px;
+}
+.btn-sm{
+    font-size: 16px;
+}
+.btn:hover{
+    color: black;
+    background-color: white;
+}
+
+.section{
+    padding: 25px;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1455px;
+    margin: 0 auto;
+}
+.section .paras{
+    padding: 20px 0;
+}
+.section .thumbnail img{
+    border: 4px solid black;
+    border-radius: 130px;
+    margin: 0 30px;
+}
+.section .sectionTag{
+    margin: 20px 0;
+}
+.left{
+    flex-direction: row-reverse;
+}
+.contact{
+    background-color: antiquewhite;
+}
+.text-center{
+    text-align: center;
+    padding: 30px 0;
+}
+.contact .form{
+    text-align: center;
+    max-width: 1180px;
+    margin: auto;
+}
+.form-input{
+    width: 80%;
+    padding: 10px;
+    margin: 14px 20px;
+    border: 2px solid black;
+    border-radius: 15px;
+    font-size: 20px;
+}
+.btn-sub{
+    background-color: purple;
+    color: antiquewhite;
+    border: 2px solid black;
+    
+}
+.text-footer{
+    width: 100%;
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+
+@media screen and (max-width:1120px) {
+    header{
+        position: static;
+    }
+    .nav-bar{
+        transition: all 0.7s ease-out;
+        /* height: 0px; */
+        flex-direction: column;
+    }
+    .nav-bar .nav-list{
+        /* display: none; */
+        margin: auto;
+        flex-direction: column;
+    }
+    .nav-bar .nav-list li{
+        margin: 30px;
+    }
+    
+    .nav-bar .right-nav{
+        
+        padding: 0 0 0 115px;
+    }
+    .nav-bar .right-nav input{
+        width: 100%;
+        text-align: center;
+
+    }
+    .nav-bar .burger{
+        display: block;
+    }
+    .nav-bar .v-class-resp{
+        display: none;
+    }
+    .h-class{
+        height: 515px;
+        
+    }
+}
+
+
+@media screen and (max-width:849px) {
+    .nav-bar .right-nav{
+        width: 73%;
+    }
+    .first-section .box-main{
+        flex-direction: column;
+    }
+    .first-section .box-main .first-half{
+        width: 145%;
+        margin: 50px 0;
+        text-align: center;
+    }
+    .first-section .box-main .second-half{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 0 0 90px 0;
+    }
+    .first-section .box-main .second-half img{
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width:410px) {
+    .first-section .box-main .second-half img{
+        width: 150px;
+        height: 150px;
+    }
+    
+}
+
+@media screen and (max-width:700px) {
+    .section{
+        flex-direction: column;
+        text-align: left;
+    }
+    .left{
+        flex-direction: column;
+        text-align: right;
+    }
+
+    
+}
+
+@media screen and (max-width:280px) {
+    .first-section .box-main .second-half img{
+        width: 100px;
+        height: 100px;
+    }
+    .nav-bar .right-nav{
+        width: 70%;
+    }
+    
+}
+</style>
+
+<body>
+    <header>
+        <nav class="nav-bar background h-class">
+            <ul class="nav-list v-class-resp">
+                <div class="logo"><img src="kari-shea-1SAnrIxw5OY-unsplash.jpg" alt="Nature Image" width="100px" height="100px"></div>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact-us">Contact Us</a></li>
+            </ul>
+            <div class="right-nav v-class-resp">
+                <input type="text" name="search" id="search">
+                <button class="btn btn-sm">Search</button>
+            </div>
+            <div class="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="background first-section">
+            <div class="box-main">
+                <div class="first-half">
+                    <p class="text-big">The Future Of Education Is Here.</p>
+                    <p class="text-small">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga adipisci
+                        aperiam sed sit eveniet error nulla reprehenderit. Tenetur expedita obcaecati blanditiis
+                        perferendis voluptatum modi quis voluptates quidem ipsum nulla. Ducimus nulla iste ex dolorum
+                        nesciunt reprehenderit!</p>
+                    <div class="buttons">
+                        <button class="btn"><b>Subscribe</b></button>
+                        <button class="btn"><b>Watch Videos</b></button>
+                    </div>
+                </div>
+
+                <div class="second-half">
+                    <img src="dave-lsoogGC_5dg-unsplash.jpg" alt="Laptop Image" width="300px" height="300px">
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="paras">
+
+                <p class="sectionTag text-big"><b>Lets Grow Together</b></p>
+                <p class="sectionSubTag text-small">Education can be characterized from the teacher's or the student's
+                    perspective. Teacher-centered definitions focus on the perspective and role of the teacher. They may
+                    claim, for example, that education is the transmission of knowledge and skills in a morally
+                    appropriate way.[26][2][9] Student-centered definitions, on the other hand, see education from the
+                    student's experience in the learning process. For example, they may define it as a process that
+                    transforms and enriches their subsequent experience.[27][10][28] Definitions taking both
+                    perspectives into account are also possible. This can take the form of describing the process as the
+                    shared experience of a common world. This shared experience involves discovery as well as posing and
+                    solving problems.</p>
+            </div>
+            <div class="thumbnail"><img src="andreas-dress-Iw12lY3koDk-unsplash.jpg" alt="animals" width="200px" height="200px"
+                    class="imgFluid"></div>
+        </section>
+        <hr>
+        <section class="section left">
+            <div class="paras">
+
+                <p class="sectionTag text-big"><b>Transforming Education In India</b></p>
+                <p class="sectionSubTag text-small">Education socializes children into society by teaching cultural
+                    values and norms. It equips them with the skills needed to become productive members of society.
+                    This way, it stimulates economic growth and raises awareness of local and global problems. Organized
+                    institutions affect many aspects of education. For example, governments set education policies. They
+                    determine when school classes happen, what is taught, and who can or must attend. International
+                    organizations, like UNESCO, have been influential in promoting primary education for all children.
+                </p>
+            </div>
+            <div class="thumbnail"><img src="tai-s-captures-FGkxir8eVI0-unsplash.jpg" alt="animals" width="200px" height="200px"
+                    class="imgFluid"></div>
+        </section>
+        <hr>
+        <section class="section">
+            <div class="paras">
+
+                <p class="sectionTag text-big"><b>The end of your search is here</b></p>
+                <p class="sectionSubTag text-small">The main field investigating education is called education studies.
+                    It examines what education is and what aims it has. It also studies how it happens, what effects it
+                    has, and how to improve it. It has many subfields, like philosophy of education, psychology of
+                    education, sociology of education, economics of education, and comparative education. It also
+                    discusses the history of education. In pre-history, education happened informally through oral
+                    communication and imitation. With the rise of ancient civilizations, writing was invented and the
+                    amount of knowledge grew. This caused a shift from informal to formal education. Initially, formal
+                    education was mainly available to elites and religious groups. The invention of the printing press
+                    in the 15th century made books more widely available. This increased general literacy. Beginning in
+                    the 18th and 19th centuries, public education became more important. It led to the worldwide process
+                    of making primary education available to all, free of charge, and compulsory up to a certain age.
+                </p>
+            </div>
+            <div class="thumbnail"><img src="andrew-pons-lylCw4zcA7I-unsplash.jpg" alt="animals" class="imgFluid" width="200px" height="200px">
+            </div>
+        </section>
+        <hr>
+
+
+        <section class="contact">
+            <h2 class="text-center">Contact Us</h2>
+            <div class="form">
+                <input class="form-input" type="text" name="name" id="name" placeholder="Enter your name">
+                <input class="form-input" type="text" name="phone" id="phone" placeholder="Enter your phone">
+                <input class="form-input" type="text" name="email" id="email" placeholder="Enter your email">
+                <textarea class="form-input" name="text" id="text" cols="30" rows="10"
+                    placeholder="Elaborate your concern"></textarea>
+                <br>
+                <button class="btn btn-sub btn-sm">Submit</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p class="text-center text-footer background"><b>Copyright &copy; 2027 www.iEducate.com - All rights reserved</b></p>
+    </footer>
+    <script>
+        burger = document.querySelector(".burger")
+        navlist = document.querySelector(".nav-list")
+        rightnav = document.querySelector(".right-nav")
+        navbar = document.querySelector(".nav-bar")
+        navbar.classList.toggle("h-class")
+        func = ()=>{
+            navlist.classList.toggle("v-class-resp")
+            navbar.classList.toggle("h-class")
+            rightnav.classList.toggle("v-class-resp")
+        }
+        burger.addEventListener("click", func)
+    </script>
+</body>
+
+</html>
